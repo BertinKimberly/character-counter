@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         http-equiv="X-UA-Compatible"
+         content="IE=edge"
+      />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0"
+      />
+      <title>Bertink counting words</title>
+      <link
+         rel="stylesheet"
+         href="style.css"
+      />
+   </head>
+   <body>
+      <div class="header"></div>
+      <div class="container">
+         <div
+            class="words"
+            id="words"
+         ></div>
+         <h2>Bertink word counter</h2>
+         <textarea
+            name=""
+            id="text"
+            class="text"
+            spellcheck="true"
+         ></textarea>
+         <div class="counter">
+            <div class="char">Characters: <span id="char">0</span></div>
+            <div class="timer">Time Remaining: 01:00</div>
+         </div>
+         <button
+            class="viewtotal"
+            onclick="calculateWordsPerMinute()"
+         >
+            View your speed
+         </button>
+         <div class="score"></div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
